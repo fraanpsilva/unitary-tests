@@ -17,7 +17,8 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
+
     private String name;
 
     @Column(unique = true)
@@ -29,7 +30,7 @@ public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return getId() == user.getId() && getEmail().equals(user.getEmail());
+        return Objects.equals(getId(), user.getId()) && Objects.equals(getEmail(), user.getEmail());
     }
 
     @Override
