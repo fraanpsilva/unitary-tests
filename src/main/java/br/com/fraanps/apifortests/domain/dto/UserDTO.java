@@ -1,6 +1,7 @@
 package br.com.fraanps.apifortests.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jdk.jfr.Description;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,6 +12,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Description("teste")
 public class UserDTO {
 
     private Integer id;
