@@ -12,7 +12,6 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Description("teste")
 public class UserDTO {
 
     private Integer id;
